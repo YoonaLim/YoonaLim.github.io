@@ -1,9 +1,9 @@
 ---
 title: 终极shell ZSH
 date: 2018-01-11 16:15:35
-type: "tool"
+type: "categories"
 ---
-![zsh%](https://pic2.zhimg.com/b691b3fa0ffb6d6c90761a98d3afab1b_r.jpg)
+![zsh%](/uploads/images/zsh%.jpg)
 在介绍zsh前，先问两个问题吧：
 
 
@@ -26,7 +26,7 @@ $ cat /etc/shells
 ```
 在 Linux 里执行这个命令和 Mac 略有不同，你会发现 Mac 多了一个 zsh，也就是说 OS X 系统预装了个 zsh，这是个神马 Shell 呢？
 
-目前常用的 Linux 系统和 OS X 系统的默认 Shell 都是 bash，但是真正强大的 Shell 是深藏不露的 zsh， 这货绝对是马车中的跑车，跑车中的飞行车，史称『终极 Shell』，但是由于配置过于复杂，所以初期无人问津，很多人跑过来看看 zsh 的配置指南，什么都不说转身就走了。直到有一天，国外有个穷极无聊的程序员开发出了一个能够让你快速上手的zsh项目，叫做「oh my zsh」，Github 网址是：[https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)。这玩意就像「X天叫你学会 C++」系列，可以让你神功速成，而且是真的。
+目前常用的 Linux 系统和 OS X 系统的默认 Shell 都是 bash，但是真正强大的 Shell 是深藏不露的 zsh， 这货绝对是马车中的跑车，跑车中的飞行车，史称『终极 Shell』，但是由于配置过于复杂，所以初期无人问津，很多人跑过来看看 zsh 的配置指南，什么都不说转身就走了。直到有一天，国外有个穷极无聊的程序员开发出了一个能够让你快速上手的zsh项目，叫做「oh my zsh」,也就是我们今天介绍的~ Github 网址是：[https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)。这玩意就像「X天叫你学会 C++」系列，可以让你神功速成，而且是真的。
 
 好，下面我们看看如何安装、配置和使用 zsh。
 
@@ -68,7 +68,7 @@ em.... 这里你可能会 wget:comman not found
 
 那就不多说了，你需要安装一个
 
-#####homebrew [https://mxcl.github.io/homebrew/](https://mxcl.github.io/homebrew/)推荐！专门来替代MacPorts
+**homebrew [https://mxcl.github.io/homebrew/](https://mxcl.github.io/homebrew/)**推荐！专门来替代MacPorts
 ``` bash
 ruby -e "$(curl -fsSkL http://raw.github.com/mxcl/homebrew/go)"
 ```
@@ -80,7 +80,7 @@ brew install wget
 ```
 现在执行上面的指令，你会发现没有Windows的世界是多么美妙...
 
-####手动安装：
+**手动安装：**
 
 ``` bash
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -88,7 +88,7 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 ```
 都不复杂，安装完成之后退出当前会话重新打开一个终端窗口，你就可以见到这个彩色的提示了：
 
-![zsh windows](https://pic1.zhimg.com/50/6bc76a6bbbac6267781dc9e59496d2ce_hd.jpg)
+![zsh windows](/uploads/images/zshwindows.jpg)
 
 
 ### 配置
@@ -147,9 +147,6 @@ oh my zsh 提供了数十种主题，相关文件在~/.oh-my-zsh/themes目录下
 6、目录浏览和跳转：输入 d，即可列出你在这个会话里访问的目录列表，输入列表前的序号，即可直接跳转。
 
 7、在当前目录下输入 .. 或 … ，或直接输入当前目录名都可以跳转，你甚至不再需要输入 cd 命令了。
-
-8、通配符搜索：ls -l ** / *.sh，可以递归显示当前目录下的 shell 文件，文件少时可以代替 find，文件太多就歇菜了。
-
 
 ...
 
