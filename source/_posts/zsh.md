@@ -1,7 +1,8 @@
 ---
 title: 终极shell ZSH
 date: 2018-01-11 16:15:35
-type: "categories"
+categories: tools
+type: linux
 ---
 ![zsh%](/uploads/images/zsh%.jpg)
 在介绍zsh前，先问两个问题吧：
@@ -60,7 +61,7 @@ chsh -s /bin/zsh
 
 安装「oh my zsh」可以自动安装也可以手动安装。
 
-####自动安装：
+**自动安装：**
 ``` bash
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ```
