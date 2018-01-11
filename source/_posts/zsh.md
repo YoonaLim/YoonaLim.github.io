@@ -4,7 +4,7 @@ date: 2018-01-11 16:15:35
 categories: tools
 type: linux
 ---
-![zsh%](zsh/zsh%.jpg)
+{% asset_img zsh%.jpg zsh% %}
 在介绍zsh前，先问两个问题吧：
 
 
@@ -89,7 +89,7 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 ```
 都不复杂，安装完成之后退出当前会话重新打开一个终端窗口，你就可以见到这个彩色的提示了：
 
-![zsh windows](zsh/zshwindows.jpg)
+{% asset_img zshwindows.jpg windows %}
 
 
 ### 配置
