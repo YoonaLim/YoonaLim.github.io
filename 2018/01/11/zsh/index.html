@@ -79,16 +79,20 @@
 
 
 
-<meta name="description" content="In carnage,I bloom,like a flower in the dawn.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="March 30th,1995">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="在介绍zsh前，先问两个问题吧： 1、相对于其他系统，Mac 的主要优势是什么？ 2、你平时用哪种 Shell？ …… em…..Mac 的最大优势是 GUI 和命令行的完美结合，不要把所有注意力放在 Mac 性感的腰身和明媚的显示屏上好吧，如果你还在用Windows 的 cmd ，那么也没什么好聊的了。 Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交">
+<meta property="og:type" content="article">
+<meta property="og:title" content="终极shell ZSH">
+<meta property="og:url" content="http://yoursite.com/2018/01/11/zsh/index.html">
 <meta property="og:site_name" content="March 30th,1995">
-<meta property="og:description" content="In carnage,I bloom,like a flower in the dawn.">
+<meta property="og:description" content="在介绍zsh前，先问两个问题吧： 1、相对于其他系统，Mac 的主要优势是什么？ 2、你平时用哪种 Shell？ …… em…..Mac 的最大优势是 GUI 和命令行的完美结合，不要把所有注意力放在 Mac 性感的腰身和明媚的显示屏上好吧，如果你还在用Windows 的 cmd ，那么也没什么好聊的了。 Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://pic2.zhimg.com/b691b3fa0ffb6d6c90761a98d3afab1b_r.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/50/6bc76a6bbbac6267781dc9e59496d2ce_hd.jpg">
+<meta property="og:updated_time" content="2018-01-11T08:17:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="March 30th,1995">
-<meta name="twitter:description" content="In carnage,I bloom,like a flower in the dawn.">
+<meta name="twitter:title" content="终极shell ZSH">
+<meta name="twitter:description" content="在介绍zsh前，先问两个问题吧： 1、相对于其他系统，Mac 的主要优势是什么？ 2、你平时用哪种 Shell？ …… em…..Mac 的最大优势是 GUI 和命令行的完美结合，不要把所有注意力放在 Mac 性感的腰身和明媚的显示屏上好吧，如果你还在用Windows 的 cmd ，那么也没什么好聊的了。 Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交">
+<meta name="twitter:image" content="https://pic2.zhimg.com/b691b3fa0ffb6d6c90761a98d3afab1b_r.jpg">
 
 
 
@@ -118,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/11/zsh/"/>
 
 
 
 
 
-  <title>March 30th,1995</title>
+  <title>终极shell ZSH | March 30th,1995</title>
   
 
 
@@ -143,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +240,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/11/zsh/" itemprop="url">终极shell ZSH</a></h1>
+          <h1 class="post-title" itemprop="name headline">终极shell ZSH</h1>
         
 
         <div class="post-meta">
@@ -321,9 +322,7 @@
       
 
       
-        
-          
-            <p><img src="https://pic2.zhimg.com/b691b3fa0ffb6d6c90761a98d3afab1b_r.jpg" alt="zsh%"><br>在介绍zsh前，先问两个问题吧：</p>
+        <p><img src="https://pic2.zhimg.com/b691b3fa0ffb6d6c90761a98d3afab1b_r.jpg" alt="zsh%"><br>在介绍zsh前，先问两个问题吧：</p>
 <p>1、相对于其他系统，Mac 的主要优势是什么？</p>
 <p>2、你平时用哪种 Shell？</p>
 <p>……</p>
@@ -379,8 +378,6 @@
 <p><strong>看完这篇文章，你就知道，zsh一出，无人再与争锋！终极二字不是盖的。</strong></p>
 <p><strong>如果你是个正在使用 shell程序员，如果你依然准备使用 bash，那就去面壁和忏悔吧。</strong></p>
 
-          
-        
       
     </div>
     
@@ -397,12 +394,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -412,10 +409,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -423,6 +421,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -443,8 +445,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -490,6 +501,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装zsh"><span class="nav-number">1.</span> <span class="nav-text">安装zsh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用zsh"><span class="nav-number">3.</span> <span class="nav-text">使用zsh</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -630,6 +657,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
