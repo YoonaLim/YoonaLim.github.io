@@ -2,9 +2,7 @@
 title: 终极shell ZSH
 date: 2018-01-11 16:15:35
 categories: tools
-type: 
-     - linux
-     - mac
+tags: [linux, mac]
 ---
 
 在介绍zsh前，先问两个问题吧：
