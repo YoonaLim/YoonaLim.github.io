@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Java,Linux" />
+  <meta name="keywords" content="Java," />
 
 
 
@@ -79,21 +79,22 @@
 
 
 
-<meta name="description" content="title:’JavaClassLoader’date:2018-03-0813:02:43categories:basic tags:[Java]###ClassLoader做什么的？ 顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件*.class，也可以是jar包里的*.class，也可以来自远程服务器提供的字节流，字">
+<meta name="description" content="ClassLoader做什么的？  顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件*.class，也可以是jar包里的*.class，也可以来自远程服务器提供的字节流，字节码的本质就是一个字节数组[]byte，它有特定的复杂的内部格式。  有很多字节码加密技术就是依靠定制ClassLoader来实现的。先使用工具对字节码文">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="March 30th,1995">
+<meta property="og:title" content="JavaClassLoader">
 <meta property="og:url" content="http://YoonaLim.com/2018/12/06/JavaClassLoader/index.html">
 <meta property="og:site_name" content="March 30th,1995">
-<meta property="og:description" content="title:’JavaClassLoader’date:2018-03-0813:02:43categories:basic tags:[Java]###ClassLoader做什么的？ 顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件*.class，也可以是jar包里的*.class，也可以来自远程服务器提供的字节流，字">
+<meta property="og:description" content="ClassLoader做什么的？  顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件*.class，也可以是jar包里的*.class，也可以来自远程服务器提供的字节流，字节码的本质就是一个字节数组[]byte，它有特定的复杂的内部格式。  有很多字节码加密技术就是依靠定制ClassLoader来实现的。先使用工具对字节码文">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoonalim.com/2018/12/06/JavaClassLoader/基本释义.jpg">
 <meta property="og:image" content="http://yoonalim.com/2018/12/06/JavaClassLoader/双亲委派.jpg">
 <meta property="og:image" content="http://yoonalim.com/2018/12/06/JavaClassLoader/钻石依赖.jpg">
 <meta property="og:image" content="http://yoonalim.com/2018/12/06/JavaClassLoader/分工与合作.jpg">
-<meta property="og:updated_time" content="2018-12-06T09:31:12.000Z">
+<meta property="og:updated_time" content="2018-12-06T09:57:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="March 30th,1995">
-<meta name="twitter:description" content="title:’JavaClassLoader’date:2018-03-0813:02:43categories:basic tags:[Java]###ClassLoader做什么的？ 顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件*.class，也可以是jar包里的*.class，也可以来自远程服务器提供的字节流，字">
+<meta name="twitter:title" content="JavaClassLoader">
+<meta name="twitter:description" content="ClassLoader做什么的？  顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件*.class，也可以是jar包里的*.class，也可以来自远程服务器提供的字节流，字节码的本质就是一个字节数组[]byte，它有特定的复杂的内部格式。  有很多字节码加密技术就是依靠定制ClassLoader来实现的。先使用工具对字节码文">
 <meta name="twitter:image" content="http://yoonalim.com/2018/12/06/JavaClassLoader/基本释义.jpg">
 
 
@@ -130,7 +131,7 @@
 
 
 
-  <title> | March 30th,1995</title>
+  <title>JavaClassLoader | March 30th,1995</title>
   
 
 
@@ -274,7 +275,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">JavaClassLoader</h1>
         
 
         <div class="post-meta">
@@ -296,6 +297,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/basic/" itemprop="url" rel="index">
+                    <span itemprop="name">basic</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -324,18 +347,19 @@
       
 
       
-        <hr>
-<p>title:’JavaClassLoader’<br>date:2018-03-0813:02:43<br>categories:basic</p>
-<h2 id="tags-Java"><a href="#tags-Java" class="headerlink" title="tags:[Java]"></a>tags:[Java]</h2><p>###ClassLoader做什么的？</p>
+        <h3>ClassLoader做什么的？</h3>
+
 <p>顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件<code>*.class</code>，也可以是jar包里的<code>*.class</code>，也可以来自远程服务器提供的字节流，字节码的本质就是一个字节数组[]byte，它有特定的复杂的内部格式。</p>
 <p><img src="/2018/12/06/JavaClassLoader/基本释义.jpg" alt=""></p>
 <p>有很多字节码加密技术就是依靠定制ClassLoader来实现的。先使用工具对字节码文件进行加密，运行时使用定制的ClassLoader先解密文件内容再加载这些解密后的字节码。</p>
 <p>每个Class对象的内部都有一个classLoader字段来标识自己是由哪个ClassLoader加载的。ClassLoader就像一个容器，里面装了很多已经加载的Class对象。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">classClass&lt;T&gt; &#123;</span><br><span class="line">	...</span><br><span class="line">	privatefinalClassLoaderclassLoader;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>####延迟加载</p>
+<h4>延迟加载</h4>
+
 <p>JVM运行并不是一次性加载所需要的全部类的，它是按需加载，也就是延迟加载。程序在运行的过程中会逐渐遇到很多不认识的新类，这时候就会调用ClassLoader来加载这些类。加载完成后就会将Class对象存在ClassLoader里面，下次就不需要重新加载了。</p>
 <p>比如你在调用某个类的静态方法时，首先这个类肯定是需要被加载的，但是并不会触及这个类的实例字段，那么实例字段的类别Class就可以暂时不必去加载，但是它可能会加载静态字段相关的类别，因为静态方法会访问静态字段。而实例字段的类别需要等到你实例化对象的时候才可能会加载。</p>
-<p>####各司其职</p>
+<h4>各司其职</h4>
+
 <p>JVM运行实例中会存在多个ClassLoader，不同的ClassLoader会从不同的地方加载字节码文件。它可以从不同的文件目录加载，也可以从不同的jar文件中加载，也可以从网络上不同的服务地址来加载。</p>
 <p>JVM中内置了三个重要的ClassLoader，分别是<em>BootstrapClassLoader</em>、<em>ExtensionClassLoader</em>和<em>AppClassLoader</em>。</p>
 <p><strong>BootstrapClassLoader</strong> 负责加载JVM运行时核心类，这些类位于<code>JAVA_HOME/lib/rt.jar</code>文件中，我们常用内置库<code>java.xxx.*</code>都在里面，比如<code>java.util.*</code>、<code>java.io.*</code>、<code>java.nio.*</code>、<code>java.lang.*</code>等等。这个ClassLoader比较特殊，它是由C代码实现的，我们将它称之为<mark>「根加载器」</mark>。</p>
@@ -421,7 +445,9 @@ protected <font color="#f1403c">ClassLoader</font>(String name, ClassLoader pare
 </code></pre>
 
 <p>双亲委派规则可能会变成三亲委派，四亲委派，取决于你使用的父加载器是谁，它会一直递归委派到根加载器。</p>
-<h3 id="Class-forName-vs-ClassLoader-loadClass"><a href="#Class-forName-vs-ClassLoader-loadClass" class="headerlink" title="Class.forName vs ClassLoader.loadClass"></a>Class.forName vs ClassLoader.loadClass</h3><p>这两个方法都可以用来加载目标类，它们之间有一个小小的区别，那就是 <code>Class.forName()</code> 方法可以获取原生类型的 Class，而 <code>ClassLoader.loadClass()</code>则会报错。</p>
+<h3>Class.forName vs ClassLoader.loadClass</h3>
+
+<p>这两个方法都可以用来加载目标类，它们之间有一个小小的区别，那就是 <code>Class.forName()</code> 方法可以获取原生类型的 Class，而 <code>ClassLoader.loadClass()</code>则会报错。</p>
 <pre><code>
 Class<b><?></b> x = Class.<font color="#0084ff">forName</font>(<font color="#f1403c">"[I"</font>);
 System.out.println(x);
@@ -489,7 +515,9 @@ depv1.print()
 </code></pre>
 
 <p>ClassLoader固然可以解决依赖冲突问题，不过它也限制了不同软件包的操作界面必须使用反射或接口的方式进行动态调用。Maven没有这种限制，它依赖于虚拟机的默认懒惰加载策略，运行过程中如果没有显示使用定制的ClassLoader，那么从头到尾都是在使用AppClassLoader，而不同版本的同名类必须使用不同的ClassLoader加载，所以Maven不能完美解决钻石依赖。<br>如果你想知道有没有开源的包管理工具可以解决钻石依赖的，我推荐你了解一下sofa-ark，它是蚂蚁金服开源的轻量级类隔离框架。</p>
-<h3 id="分工与合作"><a href="#分工与合作" class="headerlink" title="分工与合作"></a>分工与合作</h3><p>这里我们重新理解一下ClassLoader的意义，它相当于类的命名空间，起到了类隔离的作用。位于同一个ClassLoader里面的类名是唯一的，不同的ClassLoader可以持有同名的类。ClassLoader是类名称的容器，是类的沙箱。</p>
+<h3>分工与合作</h3>
+
+<p>这里我们重新理解一下ClassLoader的意义，它相当于类的命名空间，起到了类隔离的作用。位于同一个ClassLoader里面的类名是唯一的，不同的ClassLoader可以持有同名的类。ClassLoader是类名称的容器，是类的沙箱。</p>
 <p><img src="/2018/12/06/JavaClassLoader/分工与合作.jpg" alt=""></p>
 <p>不同的ClassLoader之间也会有合作，它们之间的合作是通过parent属性和双亲委派机制来完成的。parent具有更高的加载优先级。除此之外，parent还表达了一种共享关系，当多个子ClassLoader共享同一个parent时，那么这个parent里面包含的类可以认为是所有子ClassLoader共享的。这也是为什么BootstrapClassLoader被所有的类加载器视为祖先加载器，JVM核心类库自然应该被共享。</p>
 <p><strong>Thread.contextClassLoader</strong></p>
@@ -539,6 +567,12 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
       
 
       
@@ -649,7 +683,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -660,7 +694,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -709,7 +743,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-Java"><span class="nav-number">1.</span> <span class="nav-text">tags:[Java]</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Class-forName-vs-ClassLoader-loadClass"><span class="nav-number">1.1.</span> <span class="nav-text">Class.forName vs ClassLoader.loadClass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分工与合作"><span class="nav-number">1.2.</span> <span class="nav-text">分工与合作</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">ClassLoader做什么的？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">延迟加载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">各司其职</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Class.forName vs ClassLoader.loadClass</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">分工与合作</span></a></li></ol></div>
             
 
           </div>
