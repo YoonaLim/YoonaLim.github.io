@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://YoonaLim.com/2018/12/06/javaclassloader/"/>
+  <link rel="canonical" href="https://yoonalim.github.io/2018/12/06/javaclassloader/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -37,13 +37,13 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaClassLoader">
-<meta property="og:url" content="http://yoonalim.com/2018/12/06/JavaClassLoader/index.html">
+<meta property="og:url" content="https://yoonalim.github.io/2018/12/06/JavaClassLoader/index.html">
 <meta property="og:site_name" content="March 30th,1995">
 <meta property="og:description" content="ClassLoader做什么的？  顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件*.class，也可以是jar包里的*.class，也可以来自远程服务器提供的字节流，字节码的本质就是一个字节数组[]byte，它有特定的复杂的内部格式。  有很多字节码加密技术就是依靠定制ClassLoader来实现的。先使用工具对字节码文">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2018-12-06T09:57:29.000Z">
-<meta property="article:modified_time" content="2018-12-06T09:57:29.000Z">
+<meta property="article:modified_time" content="2022-08-29T01:28:27.475Z">
 <meta property="article:author" content="maijiaGod">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -1696,9 +1696,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
-        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1726,9 +1726,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
-        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -1743,7 +1743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1661506396991),
+    lastupdate: new Date(1661827598740),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -1763,6 +1763,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox: {"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.umd.js"},
       
       
+      
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"help","name":"常见问题","icon":"fa-solid fa-question","link":"https://volantis.js.org/faqs/","group":"link"},{"id":"examples","name":"示例博客","icon":"fa-solid fa-rss","link":"https://volantis.js.org/examples/","group":"link"},{"id":"contributors","name":"加入社区","icon":"fa-solid fa-fan","link":"https://volantis.js.org/contributors/","group":"link"},"hr",{"id":"source_docs","name":"本站源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/volantis-docs/","group":"link"},{"id":"source_theme","name":"主题源码","icon":"fa-solid fa-code-branch","link":"https://github.com/volantis-x/hexo-theme-volantis/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-moon","event":"volantis.dark.toggle()","group":"darkMode"}]}}
       
     }
   }
@@ -2178,7 +2180,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+            <img no-lazy class='logo' src='/uploads/images/fantasy.png'/>
           
           
           
@@ -2438,7 +2440,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">March 30th,1995</p>
     
     
   </div>
@@ -2506,7 +2508,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://yoonalim.com/2018/12/06/JavaClassLoader/">
+  <link itemprop="mainEntityOfPage" href="https://yoonalim.github.io/2018/12/06/JavaClassLoader/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="March 30th,1995">
   </span>
@@ -2535,8 +2537,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
+    <img itemprop="image" src="/uploads/images/fantasy_fill.png" class="lazyload" data-srcset="/uploads/images/fantasy_fill.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">MaijiaGod</p>
   </a>
 </div>
 
@@ -2587,7 +2589,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <h3>ClassLoader做什么的？</h3>
 
 <p>顾名思义，它是用来加载Class的。它负责将Class的字节码形式转换成内存形式的Class对象。字节码可以来自于磁盘文件<code>*.class</code>，也可以是jar包里的<code>*.class</code>，也可以来自远程服务器提供的字节流，字节码的本质就是一个字节数组[]byte，它有特定的复杂的内部格式。</p>
-<p><img src="/.com//%E5%9F%BA%E6%9C%AC%E9%87%8A%E4%B9%89.jpg" class="lazyload" data-srcset="/.com//%E5%9F%BA%E6%9C%AC%E9%87%8A%E4%B9%89.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/2018/12/06/JavaClassLoader/%E5%9F%BA%E6%9C%AC%E9%87%8A%E4%B9%89.jpg" class="lazyload" data-srcset="/2018/12/06/JavaClassLoader/%E5%9F%BA%E6%9C%AC%E9%87%8A%E4%B9%89.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>有很多字节码加密技术就是依靠定制ClassLoader来实现的。先使用工具对字节码文件进行加密，运行时使用定制的ClassLoader先解密文件内容再加载这些解密后的字节码。</p>
 <p>每个Class对象的内部都有一个classLoader字段来标识自己是由哪个ClassLoader加载的。ClassLoader就像一个容器，里面装了很多已经加载的Class对象。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">classClass&lt;T&gt; &#123;</span><br><span class="line">	...</span><br><span class="line">	privatefinalClassLoaderclassLoader;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -2610,7 +2612,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>因为ClassLoader的传递性，所有延迟加载的类都会由初始调用main方法的这个ClassLoader全全负责，它就是<em>AppClassLoader</em>。</p>
 <p><strong>双亲委派</strong></p>
 <p>前面我们提到AppClassLoader只负责加载Classpath下面的类库，如果遇到没有加载的系统类库怎么办，AppClassLoader必须将系统类库的加载工作交给<em>BootstrapClassLoader</em>和<em>ExtensionClassLoader</em>来做，这就是我们常说的<mark>「双亲委派」</mark>。</p>
-<p><img src="/.com//%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE.jpg" class="lazyload" data-srcset="/.com//%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/2018/12/06/JavaClassLoader/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE.jpg" class="lazyload" data-srcset="/2018/12/06/JavaClassLoader/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>AppClassLoader在加载一个未知的类名时，它并不是立即去搜寻Classpath，它会首先将这个类名称交给<em>ExtensionClassLoader</em>来加载，如果<em>ExtensionClassLoader</em>可以加载，那么AppClassLoader就不用麻烦了。否则它就会搜索Classpath。</p>
 <p>而ExtensionClassLoader在加载一个未知的类名时，它也并不是立即搜寻ext路径，它会首先将类名称交给<em>BootstrapClassLoader</em>来加载，如果<em>BootstrapClassLoader</em>可以加载，那么ExtensionClassLoader也就不用麻烦了。否则它就会搜索ext路径下的jar包。</p>
 <p>这三个ClassLoader之间形成了级联的父子关系，每个ClassLoader都很懒，尽量把工作交给父亲做，父亲干不了了自己才会干。每个ClassLoader对象内部都会有一个parent属性指向它的父加载器。</p>
@@ -2703,7 +2705,7 @@ Exception in thread <font color="#f1403c">"main" </font>java.lang.<font color="#
 
 <p><strong>钻石依赖</strong></p>
 <p>项目管理上有一个著名的概念叫着「钻石依赖」，是指软件依赖导致同一个软件包的两个版本需要共存而不能冲突。</p>
-<p><img src="/.com//%E9%92%BB%E7%9F%B3%E4%BE%9D%E8%B5%96.jpg" class="lazyload" data-srcset="/.com//%E9%92%BB%E7%9F%B3%E4%BE%9D%E8%B5%96.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/2018/12/06/JavaClassLoader/%E9%92%BB%E7%9F%B3%E4%BE%9D%E8%B5%96.jpg" class="lazyload" data-srcset="/2018/12/06/JavaClassLoader/%E9%92%BB%E7%9F%B3%E4%BE%9D%E8%B5%96.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>我们平时使用的 maven 是这样解决钻石依赖的，它会从多个冲突的版本中选择一个来使用，如果不同的版本之间兼容性很糟糕，那么程序将无法正常编译运行。Maven 这种形式叫「扁平化」依赖管理。</p>
 <p>使用 ClassLoader 可以解决钻石依赖问题。不同版本的软件包使用不同的 ClassLoader 来加载，<em>位于不同 ClassLoader 中名称一样的类实际上是不同的类。</em>下面让我们使用 URLClassLoader 来尝试一个简单的例子，它默认的父加载器是 AppClassLoader</p>
 <pre><code>
@@ -2758,7 +2760,7 @@ depv1.print()
 <h3>分工与合作</h3>
 
 <p>这里我们重新理解一下ClassLoader的意义，它相当于类的命名空间，起到了类隔离的作用。位于同一个ClassLoader里面的类名是唯一的，不同的ClassLoader可以持有同名的类。ClassLoader是类名称的容器，是类的沙箱。</p>
-<p><img src="/.com//%E5%88%86%E5%B7%A5%E4%B8%8E%E5%90%88%E4%BD%9C.jpg" class="lazyload" data-srcset="/.com//%E5%88%86%E5%B7%A5%E4%B8%8E%E5%90%88%E4%BD%9C.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="/2018/12/06/JavaClassLoader/%E5%88%86%E5%B7%A5%E4%B8%8E%E5%90%88%E4%BD%9C.jpg" class="lazyload" data-srcset="/2018/12/06/JavaClassLoader/%E5%88%86%E5%B7%A5%E4%B8%8E%E5%90%88%E4%BD%9C.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>不同的ClassLoader之间也会有合作，它们之间的合作是通过parent属性和双亲委派机制来完成的。parent具有更高的加载优先级。除此之外，parent还表达了一种共享关系，当多个子ClassLoader共享同一个parent时，那么这个parent里面包含的类可以认为是所有子ClassLoader共享的。这也是为什么BootstrapClassLoader被所有的类加载器视为祖先加载器，JVM核心类库自然应该被共享。</p>
 <p><strong>Thread.contextClassLoader</strong></p>
 <p>如果你稍微阅读过 Thread 的源代码，你会在它的实例字段中发现有一个字段非常特别</p>
@@ -2817,10 +2819,10 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2018-12-06T17:57:29+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-29T09:28:27+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 6, 2018</p>
+    <p>更新于：Aug 29, 2022</p>
   </a>
 </div>
 
@@ -2843,7 +2845,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoonalim.com/2018/12/06/JavaClassLoader/&title=JavaClassLoader - March 30th,1995&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://yoonalim.github.io/2018/12/06/JavaClassLoader/&title=JavaClassLoader - March 30th,1995&summary="
           
           >
           
@@ -2855,7 +2857,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://yoonalim.com/2018/12/06/JavaClassLoader/&title=JavaClassLoader - March 30th,1995&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://yoonalim.github.io/2018/12/06/JavaClassLoader/&title=JavaClassLoader - March 30th,1995&summary="
           
           >
           
@@ -2867,7 +2869,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoonalim.com/2018/12/06/JavaClassLoader/&title=JavaClassLoader - March 30th,1995&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://yoonalim.github.io/2018/12/06/JavaClassLoader/&title=JavaClassLoader - March 30th,1995&summary="
           
           >
           
@@ -2902,11 +2904,9 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
       
         <a class='prev' href='/2018/12/19/LeBron%20James%20career/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>LeBron James career</p>
-          <p class='content'>![](LeBron James career/title.jpeg)
-
-**Lebron James**
-
-初入联盟2003-2004赛季2002年2月18日，高三的勒布朗作为”The Cho...</p>
+          <p class='content'>
+初入联盟2003-2004赛季2002年2月18日，高三的勒布朗作为”The Chosen one”首次登上体育画报封面。
+2003年6月26日的NBA选秀会上以第一轮第一顺位被克利夫兰骑士选...</p>
         </a>
       
       
@@ -3078,7 +3078,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
       
     
       
-        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
     
@@ -3090,9 +3090,9 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
       
     
       
-        Use
+        本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.7.4" target="_blank" class="codename">Volantis</a>
-        as theme
+        作为主题
       
     
       
@@ -3142,6 +3142,358 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
 
 
 
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="rightmenu-wrapper">
+  <ul class="list-v rightmenu" id="rightmenu-content">
+    
+  <li class='navigation menuNavigation-Content'>
+
+
+    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-solid fa-arrow-left fa-fw"></i></a>
+
+
+
+    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-solid fa-arrow-right fa-fw"></i></a>
+
+
+
+    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-solid fa-redo fa-fw"></i></a>
+
+
+
+    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-solid fa-arrow-up fa-fw"></i></a>
+
+
+  </li>
+
+
+    <hr class="menuLoad-Content" >
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="copyPaste" data-event="copyPaste" data-group="inputBox">
+      <i class="fa-solid fa-paste fa-fw"></i>
+      粘贴文本
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="copyAll" data-event="copyAll" data-group="inputBox">
+      <i class="fa-solid fa-object-ungroup fa-fw"></i>
+      全选文本
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="copyCut" data-event="copyCut" data-group="inputBox">
+      <i class="fa-solid fa-cut fa-fw"></i>
+      剪切文本
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="copyText" data-event="copyText" data-group="seletctText">
+      <i class="fa-solid fa-copy fa-fw"></i>
+      复制文本
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="searchWord" data-event="OpenSearch(__text__)" data-group="seletctText">
+      <i class="fa-solid fa-search fa-fw"></i>
+      站内搜索
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="bingSearch" data-event="window.open(`https://cn.bing.com/search?q=${__text__}`)" data-group="seletctText">
+      <i class="fa-solid fa-search fa-fw"></i>
+      必应搜索
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="openTab" data-event="window.open(__link__)" data-group="elementCheck">
+      <i class="fa-solid fa-external-link-square-alt fa-fw"></i>
+      新标签页打开
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="copyLink" data-event="copyLink" data-group="elementCheck">
+      <i class="fa-solid fa-link fa-fw"></i>
+      复制链接地址
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementImage">
+      <i class="fa-solid fa-image fa-fw"></i>
+      复制图片
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="googleImg" data-event="window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)" data-group="elementImage">
+      <i class="fa-solid fa-images fa-fw"></i>
+      谷歌识图
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="help" target="_blank" rel="noopener" href="https://volantis.js.org/faqs/" data-group="link">
+      <i class="fa-solid fa-question fa-fw"></i>
+      常见问题
+    </a>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="examples" target="_blank" rel="noopener" href="https://volantis.js.org/examples/" data-group="link">
+      <i class="fa-solid fa-rss fa-fw"></i>
+      示例博客
+    </a>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="contributors" target="_blank" rel="noopener" href="https://volantis.js.org/contributors/" data-group="link">
+      <i class="fa-solid fa-fan fa-fw"></i>
+      加入社区
+    </a>
+  </li>
+
+
+
+    <hr class="menuLoad-Content" >
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="source_docs" target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs/" data-group="link">
+      <i class="fa-solid fa-code-branch fa-fw"></i>
+      本站源码
+    </a>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="source_theme" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/" data-group="link">
+      <i class="fa-solid fa-code-branch fa-fw"></i>
+      主题源码
+    </a>
+  </li>
+
+
+
+    <hr class="menuLoad-Content" >
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="darkMode" data-event="volantis.dark.toggle()" data-group="darkMode">
+      <i class="fa-solid fa-moon fa-fw"></i>
+      暗黑模式
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="printMode" data-event="printMode" data-group="articlePage">
+      <i class="fa-solid fa-print fa-fw"></i>
+      打印页面
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="readMode" data-event="readMode" data-group="articlePage">
+      <i class="fa-solid fa-book-open fa-fw"></i>
+      阅读模式
+    </span>
+  </li>
+
+
+<div id="menuMusic">
+  <li class='music name menuOption-Content'>
+    <p class='nav music-title fix-cursor-default'></p>
+  </li>
+  <li class='music ctrl'>
+    <a class='nav icon-only backward fix-cursor-default' href="/" onclick="return false;" title="backward">
+      <i class='fa-solid fa-step-backward fa-fw'></i>
+    </a>
+    <a class='nav icon-only toggle fix-cursor-default' href="/" onclick="return false;" title="toggle">
+      <i class='fa-solid fa-play fa-fw'></i>
+    </a>
+    <a class='nav icon-only forward fix-cursor-default' href="/" onclick="return false;" title="forward">
+      <i class='fa-solid fa-step-forward fa-fw'></i>
+    </a>
+  </li>
+  <li class='music volume'>
+    <div class='nav volume'>
+      <div class="aplayer-volume-bar-wrap">
+        <div class="aplayer-volume-bar fix-cursor-pointer">
+          <div class="aplayer-volume"></div>
+          <i class='left fa-solid fa-volume-off fa-fw'></i>
+          <i class='right fa-solid fa-volume-up fa-fw'></i>
+        </div>
+      </div>
+    </div>
+  </li>
+</div>
+
+  </ul>
+</div>
+<script src="/js/plugins/rightMenus.js"></script>
+<script>
+  const RightMenusFunction = {};
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  //RightMenusFunction['copyPaste'] = (fun) => {fun()}
+
+
+
+
+
+  //RightMenusFunction['copyAll'] = (fun) => {fun()}
+
+
+
+
+
+  //RightMenusFunction['copyCut'] = (fun) => {fun()}
+
+
+
+
+
+  //RightMenusFunction['copyText'] = (fun) => {fun()}
+
+
+
+
+
+  RightMenusFunction['searchWord'] = (__text__) => {OpenSearch(__text__)}
+
+
+
+
+
+  RightMenusFunction['bingSearch'] = (__text__) => {window.open(`https://cn.bing.com/search?q=${__text__}`)}
+
+
+
+
+
+  RightMenusFunction['openTab'] = (__link__) => {window.open(__link__)}
+
+
+
+
+
+  //RightMenusFunction['copyLink'] = (fun) => {fun()}
+
+
+
+
+
+  //RightMenusFunction['copyImg'] = (fun) => {fun()}
+
+
+
+
+
+  RightMenusFunction['googleImg'] = (__link__) => {window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  RightMenusFunction['darkMode'] = () => {volantis.dark.toggle()}
+
+
+
+
+
+  //RightMenusFunction['printMode'] = (fun) => {fun()}
+
+
+
+
+
+  //RightMenusFunction['readMode'] = (fun) => {fun()}
+
+
+
+
+
+</script>
 
 
 
@@ -3542,7 +3894,7 @@ Thread.<font color="#0084ff">currentThread</font>().<font color="#0084ff">getCon
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"March 30th,1995","url":"http://YoonaLim.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"maijiaGod","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://YoonaLim.com/","sameAs":["https://github.com/volantis-x"],"description":"In carnage,I bloom,like a flower in the dawn."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://YoonaLim.com/","name":"March 30th,1995"}},{"@type":"ListItem","position":2,"item":{"@id":"http://YoonaLim.com/categories/basic/","name":"basic"}},{"@type":"ListItem","position":3,"item":{"@id":"http://YoonaLim.com/2018/12/06/JavaClassLoader/","name":"JavaClassLoader"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"March 30th,1995","url":"http://YoonaLim.com/","description":"In carnage,I bloom,like a flower in the dawn.","author":{"@type":"Person","name":"maijiaGod","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://YoonaLim.com/","description":"In carnage,I bloom,like a flower in the dawn."},"publisher":{"@type":"Organization","name":"March 30th,1995","url":"http://YoonaLim.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://YoonaLim.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JavaClassLoader","description":"In carnage,I bloom,like a flower in the dawn.","inLanguage":"zh-Hans","mainEntityOfPage":{"@type":"WebPage","@id":"http://yoonalim.com/2018/12/06/JavaClassLoader/"},"author":{"@type":"Person","name":"maijiaGod","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://YoonaLim.com/"},"publisher":{"@type":"Organization","name":"March 30th,1995","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://yoonalim.com/2018/12/06/JavaClassLoader/","wordCount":0,"datePublished":"2018-12-06T09:57:29.000Z","dateModified":"2018-12-06T09:57:29.000Z","articleSection":"basic","keywords":"Java","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"March 30th,1995","url":"https://yoonalim.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"maijiaGod","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yoonalim.github.io/","sameAs":["https://github.com/volantis-x"],"description":"In carnage,I bloom,like a flower in the dawn."},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://yoonalim.github.io/","name":"March 30th,1995"}},{"@type":"ListItem","position":2,"item":{"@id":"https://yoonalim.github.io/categories/basic/","name":"basic"}},{"@type":"ListItem","position":3,"item":{"@id":"https://yoonalim.github.io/2018/12/06/JavaClassLoader/","name":"JavaClassLoader"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"March 30th,1995","url":"https://yoonalim.github.io/","description":"In carnage,I bloom,like a flower in the dawn.","author":{"@type":"Person","name":"maijiaGod","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yoonalim.github.io/","description":"In carnage,I bloom,like a flower in the dawn."},"publisher":{"@type":"Organization","name":"March 30th,1995","url":"https://yoonalim.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://yoonalim.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JavaClassLoader","description":"In carnage,I bloom,like a flower in the dawn.","inLanguage":"zh-Hans","mainEntityOfPage":{"@type":"WebPage","@id":"https://yoonalim.github.io/2018/12/06/JavaClassLoader/"},"author":{"@type":"Person","name":"maijiaGod","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://yoonalim.github.io/"},"publisher":{"@type":"Organization","name":"March 30th,1995","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://yoonalim.github.io/2018/12/06/JavaClassLoader/","wordCount":0,"datePublished":"2018-12-06T09:57:29.000Z","dateModified":"2022-08-29T01:28:27.475Z","articleSection":"basic","keywords":"Java","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
